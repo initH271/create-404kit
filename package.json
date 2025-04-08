@@ -1,0 +1,49 @@
+{
+  "name": "create-404kit",
+  "version": "0.0.2",
+  "description": "快速生成开发环境的脚手架",
+  "author": {
+    "name": "inith271",
+    "email": "oy.zf@qq.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/initH271/create-404kit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/initH271/create-404kit.git"
+  },
+  "main": "./dist/index.js",
+  "bin": {
+    "create-404kit": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "bun run src/",
+    "build": "tsup src --format esm --treeshake"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "404kit",
+    "create-404kit",
+    "404kit-cli",
+    "cli"
+  ],
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^22.14.0",
+    "tsup": "^8.4.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "command-line-args": "^6.0.1",
+    "command-line-usage": "^7.0.3",
+    "download-git-repo": "^3.0.2",
+    "ora": "^8.2.0",
+    "prompts": "^2.4.2"
+  }
+}
